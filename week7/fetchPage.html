@@ -1,0 +1,258 @@
+	<!-- this is the version saved directly from the browser; this version is static -->
+<!-- begin HTML document -->
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://localhost/cis133w/week7/fetch_page.php -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport">
+    <title> Fetch Page </title>
+    <link rel="stylesheet" href="./Fetch Page_files/fetch_page.css">
+    <script src="./Fetch Page_files/fetch_page.js.download"></script>
+    <script>
+        /* have the javascript vairables contain php islands that echo the contents of the php variables ~* which should hold the page that has been fetched and decoded. */
+        var BASE = "http://eloquentjavascript.net/";
+        var PAGE = "PCFkb2N0eXBlIGh0bWw+CjxoZWFkPgogIDxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEiPgogIDx0aXRsZT5FbG9xdWVudCBKYXZhU2NyaXB0PC90aXRsZT4KICA8bGluayByZWw9c3R5bGVzaGVldCBocmVmPSJjc3MvZWpzLmNzcyI+CiAgPHN0eWxlPgogICAgYXJ0aWNsZSB7IGRpc3BsYXk6IGZsZXg7IG1hcmdpbjogMCAyZW07IGZsZXgtd3JhcDogd3JhcDsgbWF4LXdpZHRoOiBub25lOyBtYXgtd2lkdGg6IGNhbGMoMzhlbSArIDUwMHB4KTsgfQogICAgI2NvdmVyIHsgZmxleC1iYXNpczogNDgwcHg7IG1heC13aWR0aDogMzVlbTsgZmxleC1ncm93OiAxOyBtYXJnaW4tcmlnaHQ6IDNlbTsgfQogICAgI2NvbnRlbnRzIHsgZmxleC1iYXNpczogNTAwcHg7IGZsZXgtZ3JvdzogMTsgbWF4LXdpZHRoOiAzNWVtOyAgfQogICAgI2xpbmtzIHsgZmxleC1iYXNpczogMTAwJTsgbWF4LXdpZHRoOiAzNWVtOyB9CiAgICBsaS5jb250ZW50cy1pbnRybzpiZWZvcmUgeyBkaXNwbGF5OiBub25lOyB9CiAgICAudG9jIGgzIHsgZmxvYXQ6IHJpZ2h0OyBmb250LWZhbWlseTogaW5oZXJpdDsgbWFyZ2luOiAwOyBmb250LXdlaWdodDogbm9ybWFsOyBmb250LXNpemU6IDkwJTsgfQogICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTg1cHgpIHsgLnRvYyBoMyB7IGRpc3BsYXk6IG5vbmUgfX0KICAgIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDUwMHB4KSB7ICNjb3ZlciB7IG1hcmdpbi1yaWdodDogMCB9IGFydGljbGUgeyBtYXJnaW46IDAgfSB9CiAgICB1bC5saW5rcyB7IGxpc3Qtc3R5bGUtdHlwZTogY2lyY2xlOyB9CiAgICBpbWcubG9nbyB7IHZlcnRpY2FsLWFsaWduOiB0ZXh0LXRvcDsgcGFkZGluZzogMHB4IDRweDsgYm9yZGVyOiAwOyB9CiAgPC9zdHlsZT4KPC9oZWFkPgoKPGFydGljbGU+CjxkaXYgaWQ9Y292ZXI+CgogIDxwIHN0eWxlPSJtYXJnaW46IDFlbSAwIj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vbXlib29rLnRvL2VqcyI+CiAgICAgIDxpbWcgc3JjPSJpbWcvY292ZXIuanBnIiBhbHQ9IkNvdmVyIGltYWdlIiBzdHlsZT0iYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IG1heC13aWR0aDogMTAwJTsgYm94LXNoYWRvdzogNHB4IDRweCA3cHggcmdiYSgwLCAwLCAwLCAwLjQpIj4KICAgIDwvYT4KICA8L3A+CgogIDxoMT5FbG9xdWVudCBKYXZhU2NyaXB0PGRpdiBzdHlsZT0iZm9udC1zaXplOiA3MCUiPjNyZCBlZGl0aW9uICgyMDE4KTwvZGl2PjwvaDI+CgogIDxwPlRoaXMgaXMgYSBib29rIGFib3V0IEphdmFTY3JpcHQsIHByb2dyYW1taW5nLCBhbmQgdGhlIHdvbmRlcnMgb2YKICB0aGUgZGlnaXRhbC4gWW91IGNhbiByZWFkIGl0IG9ubGluZSBoZXJlLCBvciBidXkgeW91ciBvd24KICA8YSBocmVmPSJodHRwczovL215Ym9vay50by9lanMiPnBhcGVyYmFjayBjb3B5PC9hPi48L3A+CgogIDxwPldyaXR0ZW4gYnkgTWFyaWpuIEhhdmVyYmVrZS48L3A+CgogIDxkaXYgc3R5bGU9ImZvbnQtc2l6ZTogODAlIj4KICA8cD5MaWNlbnNlZCB1bmRlcgogIGEgPGEgaHJlZj0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLzMuMC8iPkNyZWF0aXZlCiAgQ29tbW9ucyBhdHRyaWJ1dGlvbi1ub25jb21tZXJjaWFsIGxpY2Vuc2U8L2E+LiBBbGwgY29kZSBpbiB0aGlzIGJvb2sKICBtYXkgYWxzbyBiZSBjb25zaWRlcmVkIGxpY2Vuc2VkIHVuZGVyCiAgYW4gPGEgaHJlZj0iaHR0cHM6Ly9lbG9xdWVudGphdmFzY3JpcHQubmV0L2NvZGUvTElDRU5TRSI+TUlUIGxpY2Vuc2U8L2E+LjwvcD4KCiAgPHA+SWxsdXN0cmF0aW9ucyBieSB2YXJpb3VzIGFydGlzdHM6IENvdmVyIGFuZCBjaGFwdGVyIGlsbHVzdHJhdGlvbnMKICBieSA8YSBocmVmPSJodHRwOi8vbWFkYWxpbmF0YW50YXJlYW51LmNvbS8iPk1hZGFsaW5hIFRhbnRhcmVhbnU8L2E+LgogIFBpeGVsIGFydCBpbiBDaGFwdGVycyA3IGFuZCAxNiBieSBBbnRvbmlvIFBlcmRvbW8gUGFzdG9yLiBSZWd1bGFyCiAgZXhwcmVzc2lvbiBkaWFncmFtcyBpbiBDaGFwdGVyIDkgZ2VuZXJhdGVkCiAgd2l0aCA8YSBocmVmPSJodHRwczovL3JlZ2V4cGVyLmNvbSI+cmVnZXhwZXIuY29tPC9hPiBieSBKZWZmCiAgQXZhbGxvbmUuIFZpbGxhZ2UgcGhvdG9ncmFwaCBpbiBDaGFwdGVyIDExIGJ5IEZhYnJpY2UgQ3JldXpvdC4gR2FtZQogIGNvbmNlcHQgZm9yIENoYXB0ZXIgMTYgYnkgPGEgaHJlZj0iaHR0cDovL2xlc3NtaWxrLmNvbSI+VGhvbWFzCiAgUGFsZWY8L2E+LjwvcD4KCiAgPHA+VGhlIHRoaXJkIGVkaXRpb24gd2FzIG1hZGUgcG9zc2libGUKICBieSA8YSBocmVmPSJiYWNrZXJzMy5odG1sIj4zMjUgZmluYW5jaWFsIGJhY2tlcnM8L2E+LCBtb3N0CiAgbm90YWJseSA8YSBocmVmPSJodHRwczovL25leHRqb3VybmFsLmNvbS8iPjxpbWcgc3JjPSJpbWcvbmV4dGpvdXJuYWwucG5nIgogIGFsdD0iTmV4dGpvdXJuYWwiIGNsYXNzPWxvZ28+PC9hPiBhbmQgPGEgaHJlZj0iaHR0cHM6Ly93d3cuaG9sYmVydG9uc2Nob29sLmNvbS8iPjxpbWcgc3JjPSJpbWcvaG9sYmVydG9uLnBuZyIgYWx0PSJIb2xiZXJ0b24gU2Nob29sIiBjbGFzcz1sb2dvPjwvYT4uIFRoZSBzZWNvbmQgZWRpdGlvbgogIHdhcyBzdXBwb3J0ZWQgYnkgPGEgaHJlZj0iYmFja2Vycy5odG1sIj40NTQgYmFja2VyczwvYT4sIHdpdGgKICBzaWduaWZpY2FudCBjb250cmlidXRpb25zCiAgZnJvbSA8YSBocmVmPSJodHRwczovL3d3dy5tb3ppbGxhLm9yZy9lbi1VUy8iPjxpbWcgc3JjPSJpbWcvbW96aWxsYV9taW5pLnBuZyIKICBhbHQ9TW96aWxsYQogIGNsYXNzPWxvZ28+PC9hPiwgPGEgaHJlZj0iaHR0cHM6Ly93d3cuaGFja3JlYWN0b3IuY29tLyI+PGltZyBzcmM9ImltZy9oYWNrX3JlYWN0b3JfbWluaS5wbmciCiAgYWx0PSJIYWNrIFJlYWN0b3IiIGNsYXNzPWxvZ28+PC9hPiwKICBhbmQgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ2hvc3RlcnkuY29tLyI+PGltZyBzcmM9ImltZy9naG9zdGVyeV9taW5pLnBuZyIKICBhbHQ9Ikdob3N0ZXJ5IiBjbGFzcz1sb2dvPjwvYT4uPC9wPgogIDwvZGl2PgoKPC9kaXY+Cgo8ZGl2IGlkPWNvbnRlbnRzPgoKICA8aDI+Q29udGVudHM8L2gyPgoKICA8b2wgY2xhc3M9dG9jPgogICAgPGxpIGNsYXNzPSJjb250ZW50cy1pbnRybyI+PGEgaHJlZj0iMDBfaW50cm8uaHRtbCI+SW50cm9kdWN0aW9uPC9hPgogICAgPGxpPgogICAgICA8aDM+KFBhcnQgMTogTGFuZ3VhZ2UpPC9oMz4KICAgICAgPGEgaHJlZj0iMDFfdmFsdWVzLmh0bWwiPlZhbHVlcywgVHlwZXMsIGFuZCBPcGVyYXRvcnM8L2E+CiAgICA8L2xpPgogICAgPGxpPjxhIGhyZWY9IjAyX3Byb2dyYW1fc3RydWN0dXJlLmh0bWwiPlByb2dyYW0gU3RydWN0dXJlPC9hPgogICAgPGxpPjxhIGhyZWY9IjAzX2Z1bmN0aW9ucy5odG1sIj5GdW5jdGlvbnM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMDRfZGF0YS5odG1sIj5EYXRhIFN0cnVjdHVyZXM6IE9iamVjdHMgYW5kIEFycmF5czwvYT4KICAgIDxsaT48YSBocmVmPSIwNV9oaWdoZXJfb3JkZXIuaHRtbCI+SGlnaGVyLW9yZGVyIEZ1bmN0aW9uczwvYT4KICAgIDxsaT48YSBocmVmPSIwNl9vYmplY3QuaHRtbCI+VGhlIFNlY3JldCBMaWZlIG9mIE9iamVjdHM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMDdfcm9ib3QuaHRtbCI+UHJvamVjdDogQSBSb2JvdDwvYT4KICAgIDxsaT48YSBocmVmPSIwOF9lcnJvci5odG1sIj5CdWdzIGFuZCBFcnJvcnM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMDlfcmVnZXhwLmh0bWwiPlJlZ3VsYXIgRXhwcmVzc2lvbnM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMTBfbW9kdWxlcy5odG1sIj5Nb2R1bGVzPC9hPgogICAgPGxpPjxhIGhyZWY9IjExX2FzeW5jLmh0bWwiPkFzeW5jaHJvbm91cyBQcm9ncmFtbWluZzwvYT4KICAgIDxsaT48YSBocmVmPSIxMl9sYW5ndWFnZS5odG1sIj5Qcm9qZWN0OiBBIFByb2dyYW1taW5nIExhbmd1YWdlPC9hPgogICAgPGxpPgogICAgICA8aDM+KFBhcnQgMjogQnJvd3Nlcik8L2gzPgogICAgICA8YSBocmVmPSIxM19icm93c2VyLmh0bWwiPkphdmFTY3JpcHQgYW5kIHRoZSBCcm93c2VyPC9hPgogICAgPC9saT4KICAgIDxsaT48YSBocmVmPSIxNF9kb20uaHRtbCI+VGhlIERvY3VtZW50IE9iamVjdCBNb2RlbDwvYT4KICAgIDxsaT48YSBocmVmPSIxNV9ldmVudC5odG1sIj5IYW5kbGluZyBFdmVudHM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMTZfZ2FtZS5odG1sIj5Qcm9qZWN0OiBBIFBsYXRmb3JtIEdhbWU8L2E+CiAgICA8bGk+PGEgaHJlZj0iMTdfY2FudmFzLmh0bWwiPkRyYXdpbmcgb24gQ2FudmFzPC9hPgogICAgPGxpPjxhIGhyZWY9IjE4X2h0dHAuaHRtbCI+SFRUUCBhbmQgRm9ybXM8L2E+CiAgICA8bGk+PGEgaHJlZj0iMTlfcGFpbnQuaHRtbCI+UHJvamVjdDogQSBQaXhlbCBBcnQgRWRpdG9yPC9hPgogICAgPGxpPgogICAgICA8aDM+KFBhcnQgMzogTm9kZSk8L2gzPgogICAgICA8YSBocmVmPSIyMF9ub2RlLmh0bWwiPk5vZGUuanM8L2E+CiAgICA8L2xpPgogICAgPGxpPjxhIGhyZWY9IjIxX3NraWxsc2hhcmluZy5odG1sIj5Qcm9qZWN0OiBTa2lsbC1TaGFyaW5nIFdlYnNpdGU8L2E+CiAgPC9vbD4KCjwvZGl2PgoKPGRpdiBpZD1saW5rcz4KCiAgPHA+QSBwYXBlciB2ZXJzaW9uIG9mIEVsb3F1ZW50IEphdmFTY3JpcHQsIGluY2x1ZGluZyBhbiBhZGRpdGlvbmFsCiAgY2hhcHRlciwgaXMgYmVpbmcgYnJvdWdodCBvdXQKICBieSA8YSBocmVmPSJodHRwOi8vd3d3Lm5vc3RhcmNoLmNvbS9lanMzIj5ObyBTdGFyY2ggUHJlc3M8L2E+LjwvcD4KCiAgPGgyPk90aGVyIHBhZ2VzPC9oMj4KCiAgPHVsIGNsYXNzPSJsaW5rcyI+CiAgICA8bGk+PGEgaHJlZj0iY29kZSI+Q29kZSBzYW5kYm94IGFuZCBleGVyY2lzZSBzb2x1dGlvbnM8L2E+PC9saT4KICAgIDxsaT48YSBocmVmPSJlcnJhdGEuaHRtbCI+RXJyYXRhIGZvciB0aGUgcGFwZXIgYm9vazwvYT48L2xpPgogICAgPGxpPjxhIGhyZWY9IkVsb3F1ZW50X0phdmFTY3JpcHQucGRmIj5UaGlzIGJvb2sgYXMgYSBzaW5nbGUgUERGIGZpbGU8L2E+ICgmYW1wOyA8YSBocmVmPSJFbG9xdWVudF9KYXZhU2NyaXB0X3NtYWxsLnBkZiI+c21hbGwgdmVyc2lvbiBmb3IgbW9iaWxlPC9hPik8L2xpPgogICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vZWxvcXVlbnRqYXZhc2NyaXB0Lm5ldC9FbG9xdWVudF9KYXZhU2NyaXB0LmVwdWIiPlRoaXMgYm9vayBhcyBhbiBFUFVCIGZpbGU8L2E+PC9saT4KICAgIDxsaT48YSBocmVmPSJodHRwczovL2Vsb3F1ZW50amF2YXNjcmlwdC5uZXQvRWxvcXVlbnRfSmF2YVNjcmlwdC5tb2JpIj5UaGlzIGJvb2sgYXMgYSBNT0JJIChLaW5kbGUpIGZpbGU8L2E+PC9saT4KICAgIDxsaT48YSBocmVmPSJodHRwczovL2Vsb3F1ZW50amF2YXNjcmlwdC5uZXQvMXN0X2VkaXRpb24iPlRoZSBmaXJzdCBlZGl0aW9uIG9mIHRoZSBib29rPC9hPjwvbGk+CiAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly9lbG9xdWVudGphdmFzY3JpcHQubmV0LzJuZF9lZGl0aW9uIj5UaGUgc2Vjb25kIGVkaXRpb24gb2YgdGhlIGJvb2s8L2E+PC9saT4KICA8L3VsPgoKICA8aDI+VHJhbnNsYXRpb25zPC9oMj4KCiAgPGgzPlRoaXJkIEVkaXRpb248L2gzPgoKICA8dWwgY2xhc3M9dHJhbnNsYXRpb25zPgogICAgPGxpPjxhIGhyZWY9Imh0dHA6Ly9lbG9xdWVudGpzLmlyLyI+JiMxNjAxOyYjMTU3NTsmIzE1ODU7JiMxNTg3OyYjMTc0MDsgKFBlcnNpYW4pPC9hPjwvbGk+CiAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly9lbG9xdWVudGpzLWVzLnRoZWRvam8ubXgvIj5Fc3BhJm50aWxkZTtvbCAoU3BhbmlzaCwgcGFydGlhbCk8L2E+PC9saT4KICA8L3VsPgoKICA8aDM+U2Vjb25kIEVkaXRpb248L2gzPgoKICA8dWwgY2xhc3M9dHJhbnNsYXRpb25zPgogICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vcmFiYWhib3VkaWEuZ2l0Ym9va3MuaW8vYXJhYmljLWVsb3F1ZW50LWpzL2NvbnRlbnQvaW5kZXguaHRtbCI+JiMxNTkzOyYjMTYxNDsmIzE1ODU7JiMxNjE0OyYjMTU3NjsmIzE2MTY7JiMxNjEwOyYjMTYxNzsmbHJtOyAoQXJhYmljKTwvYT48L2xpPgogICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vdG82ZXNrby5naXRodWIuaW8vIj4mIzEwNDE7JiMxMDk4OyYjMTA4MzsmIzEwNzU7JiMxMDcyOyYjMTA4ODsmIzEwODk7JiMxMDgyOyYjMTA4MDsgKEJ1bGdhcmlhbik8L2E+PC9saT4KICAgIDxsaT48YSBocmVmPSJodHRwczovL2JyYXppbGpzLmdpdGh1Yi5pby9lbG9xdWVudGUtamF2YXNjcmlwdC8iPlBvcnR1Z3UmZWNpcmM7cyAoUG9ydHVndWVzZSk8L2E+PC9saT4KICAgIDxsaT48YSBocmVmPSJodHRwczovL2thcm1henppbi5naXRib29rcy5pby9lbG9xdWVudGphdmFzY3JpcHRfcnUvY29udGVudC8iPiYjMTA1NjsmIzEwOTE7JiMxMDg5OyYjMTA4OTsmIzEwODI7JiMxMDgwOyYjMTA4MTsgKFJ1c3NpYW4pPC9hPjwvbGk+CiAgPC91bD4KCjwvZGl2Pgo8L2FydGljbGU+Cg==";
+    </script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eloquent JavaScript</title>
+    <link rel="stylesheet" href="./Fetch Page_files/ejs.css">
+    <style>
+        article {
+            display: flex;
+            margin: 0 2em;
+            flex-wrap: wrap;
+            max-width: none;
+            max-width: calc(38em + 500px);
+        }
+        
+        #cover {
+            flex-basis: 480px;
+            max-width: 35em;
+            flex-grow: 1;
+            margin-right: 3em;
+        }
+        
+        #contents {
+            flex-basis: 500px;
+            flex-grow: 1;
+            max-width: 35em;
+        }
+        
+        #links {
+            flex-basis: 100%;
+            max-width: 35em;
+        }
+        
+        li.contents-intro:before {
+            display: none;
+        }
+        
+        .toc h3 {
+            float: right;
+            font-family: inherit;
+            margin: 0;
+            font-weight: normal;
+            font-size: 90%;
+        }
+        
+        @media screen and (max-width: 585px) {
+            .toc h3 {
+                display: none
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            #cover {
+                margin-right: 0
+            }
+            article {
+                margin: 0
+            }
+        }
+        
+        ul.links {
+            list-style-type: circle;
+        }
+        
+        img.logo {
+            vertical-align: text-top;
+            padding: 0px 4px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="">
+    <div id="searchBox">
+        Type a URL here: <input type="text" id="urlBox"> <span id="goButton">GO</span>
+    </div>
+    <div id="tooContainer">
+        <!-- [this is just the container for the table of contents where we will center the contents] -->
+        <span id="fetch_page_TOC"></span>
+        <div id="too">
+            <ul>
+                <li>
+                    <a hfref="#fetch_page_TOC_1">Eloquent JavaScript 3rd edition (2018)</a></li>
+                <ul>
+                    <li> Contents</li>
+                    <ul>
+                        <li> (Part 1: Language)</li>
+                        <li> (Part 2: Browser)</li>
+                        <li> (Part 3: Node)</li>
+                    </ul>
+                    <li> Other pages</li>
+                    <li> Translations</li>
+                    <ul>
+                        <li> Third Edition</li>
+                        <li> Second Edition</li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div id="contents">
+        <!-- [actual page content will be loaded here] -->
+        <article>
+            <div id="cover">
+
+                <p style="margin: 1em 0">
+                    <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fmybook.to%2Fejs">
+                        <img src="./Fetch Page_files/cover.jpg" alt="Cover image" style="border: 1px solid black; max-width: 100%; box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4)">
+                    </a>
+                </p>
+                <a href="#fetch_page_TOC">[back to top]</a>
+                <h1><span id="fetch_page_TOC_1"></span>Eloquent JavaScript
+                    <div style="font-size: 70%">3rd edition (2018)</div>
+                </h1>
+
+                <p>This is a book about JavaScript, programming, and the wonders of the digital. You can read it online here, or buy your own
+                    <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fmybook.to%2Fejs">paperback copy</a>.</p>
+
+                <p>Written by Marijn Haverbeke.</p>
+
+                <div style="font-size: 80%">
+                    <p>Licensed under a <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby-nc%2F3.0%2F">Creative
+  Commons attribution-noncommercial license</a>. All code in this book may also be considered licensed under an <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjavascript.net%2Fcode%2FLICENSE">MIT license</a>.</p>
+
+                    <p>Illustrations by various artists: Cover and chapter illustrations by <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Fmadalinatantareanu.com%2F">Madalina Tantareanu</a>. Pixel art in Chapters 7 and 16 by Antonio
+                        Perdomo Pastor. Regular expression diagrams in Chapter 9 generated with <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fregexper.com">regexper.com</a> by Jeff Avallone. Village photograph in Chapter 11
+                        by Fabrice Creuzot. Game concept for Chapter 16 by <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Flessmilk.com">Thomas
+  Palef</a>.</p>
+
+                    <p>The third edition was made possible by <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2Fbackers3.html">325 financial backers</a>, most notably
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fnextjournal.com%2F"><img src="./Fetch Page_files/nextjournal.png" alt="Nextjournal" class="logo"></a> and
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fwww.holbertonschool.com%2F"><img src="./Fetch Page_files/holberton.png" alt="Holberton School" class="logo"></a>. The second edition was supported by <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2Fbackers.html">454 backers</a>,
+                        with significant contributions from
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fwww.mozilla.org%2Fen-US%2F"><img src="./Fetch Page_files/mozilla_mini.png" alt="Mozilla" class="logo"></a>,
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fwww.hackreactor.com%2F"><img src="./Fetch Page_files/hack_reactor_mini.png" alt="Hack Reactor" class="logo"></a>, and
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fwww.ghostery.com%2F"><img src="./Fetch Page_files/ghostery_mini.png" alt="Ghostery" class="logo"></a>.</p>
+                </div>
+
+            </div>
+
+            <div id="contents">
+
+                <h2>Contents</h2>
+
+                <ol class="toc">
+                    <li class="contents-intro"><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F00_intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <h3>(Part 1: Language)</h3>
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F01_values.html">Values, Types, and Operators</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F02_program_structure.html">Program Structure</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F03_functions.html">Functions</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F04_data.html">Data Structures: Objects and Arrays</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F05_higher_order.html">Higher-order Functions</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F06_object.html">The Secret Life of Objects</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F07_robot.html">Project: A Robot</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F08_error.html">Bugs and Errors</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F09_regexp.html">Regular Expressions</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F10_modules.html">Modules</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F11_async.html">Asynchronous Programming</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F12_language.html">Project: A Programming Language</a>
+                    </li>
+                    <li>
+                        <h3>(Part 2: Browser)</h3>
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F13_browser.html">JavaScript and the Browser</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F14_dom.html">The Document Object Model</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F15_event.html">Handling Events</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F16_game.html">Project: A Platform Game</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F17_canvas.html">Drawing on Canvas</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F18_http.html">HTTP and Forms</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F19_paint.html">Project: A Pixel Art Editor</a>
+                    </li>
+                    <li>
+                        <h3>(Part 3: Node)</h3>
+                        <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F20_node.html">Node.js</a>
+                    </li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2F21_skillsharing.html">Project: Skill-Sharing Website</a>
+                    </li>
+                </ol>
+
+            </div>
+
+            <div id="links">
+
+                <p>A paper version of Eloquent JavaScript, including an additional chapter, is being brought out by <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Fwww.nostarch.com%2Fejs3">No Starch Press</a>.</p>
+
+                <h2>Other pages</h2>
+
+                <ul class="links">
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2Fcode">Code sandbox and exercise solutions</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2Ferrata.html">Errata for the paper book</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2FEloquent_JavaScript.pdf">This book as a single PDF file</a> (&amp; <a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjavascript.net%2FEloquent_JavaScript_small.pdf">small version for mobile</a>)</li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjavascript.net%2FEloquent_JavaScript.epub">This book as an EPUB file</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjavascript.net%2FEloquent_JavaScript.mobi">This book as a MOBI (Kindle) file</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjavascript.net%2F1st_edition">The first edition of the book</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjavascript.net%2F2nd_edition">The second edition of the book</a></li>
+                </ul>
+
+                <h2>Translations</h2>
+
+                <h3>Third Edition</h3>
+
+                <ul class="translations">
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=http%3A%2F%2Feloquentjs.ir%2F">فارسی (Persian)</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Feloquentjs-es.thedojo.mx%2F">Español (Spanish, partial)</a></li>
+                </ul>
+
+                <h3>Second Edition</h3>
+
+                <ul class="translations">
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Frabahboudia.gitbooks.io%2Farabic-eloquent-js%2Fcontent%2Findex.html">عَرَبِيّ‎ (Arabic)</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fto6esko.github.io%2F">Български (Bulgarian)</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fbraziljs.github.io%2Feloquente-javascript%2F">Português (Portuguese)</a></li>
+                    <li><a href="https://localhost/cis133w/week7/fetch_page.php?url=https%3A%2F%2Fkarmazzin.gitbooks.io%2Feloquentjavascript_ru%2Fcontent%2F">Русский (Russian)</a></li>
+                </ul>
+
+            </div>
+        </article>
+    </div>
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

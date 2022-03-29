@@ -1,0 +1,43 @@
+#contents {
+    border: 3px solid red;
+    padding: 5px;
+    /*width: 80px;*/
+}
+
+body {
+    margin: 0px;
+}
+
+#urlBox {
+    width: 50%;
+}
+
+#tooContainer {
+    text-align: center;
+}
+
+#too {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#searchBox {
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#goButton {
+    background: red;
+    color: black;
+    padding: 4px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: .75em;
+    vertical-align: middle;
+    cursor: crosshair;
+}
